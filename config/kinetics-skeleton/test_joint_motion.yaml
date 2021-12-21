@@ -1,0 +1,28 @@
+# feeder
+feeder: feeders.feeder.Feeder
+test_feeder_args:
+  data_path: ./data/kinetics/val_data_joint_motion.npy
+  label_path: ./data/kinetics/val_label.pkl
+  debug: False
+
+# model
+model: model.agcn.Model
+model_args:
+  num_class: 400
+  num_person: 2
+  num_point: 18
+  graph: graph.kinetics.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+
+# test 
+phase: test
+device: [0,1,2]
+test_batch_size: 64
+weights: ./runs/ki_agcn_joint_motion-50-49194.pt
+
+
+work_dir: ./work_dir/kinetics/agcn_test_joint_motion
+model_saved_name: ./runs/ki_test_agcn_joint_motion
+save_score: True
