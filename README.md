@@ -34,7 +34,9 @@ HybridNet for Skeleton-Based Action Recognition
     `python data_gen/gen_bone_data.py`
 
 # Donload the weight-files
-[https://drive.google.com/drive/folders/1co3n3OCUZOVIhW-T-VXUuQegLHRLRKzU?usp=sharing]:weights
+- Download the raw data from [weights](https://drive.google.com/drive/folders/1co3n3OCUZOVIhW-T-VXUuQegLHRLRKzU?usp=sharing)
+
+[https://drive.google.com/drive/folders/1co3n3OCUZOVIhW-T-VXUuQegLHRLRKzU?usp=sharing]: weights
 # Training & Testing
 
 Change the config file depending on what you want.
